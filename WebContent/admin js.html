@@ -1,0 +1,34 @@
+<form action="submit.html" onsubmit="return valid()">
+<center>
+<table border="1"width="30%" cellpadding="3">
+<thead>
+                    <tr>
+                        <th colspan="2">Admin Panel</th>
+                    </tr>
+                </thead>
+<tr><td>Admin Id :</td><td><input type="text" id="name"></td><span id="err_name"></tr></span><br>
+<tr><td>Password :</td><td><input type="text" id="password"></td><span id="err_password"></tr></span><br>
+ <tr>
+                        <td><input type="submit"value="Login"/></td>
+                        <td><input type="reset"value="Reset"/></td>
+                    </tr>
+    </form>
+    </table>
+    </center>
+    <script type="text/javascript">
+    function valid(){
+    	var EmailId=document.getElementById('name').value;
+		var password=document.getElementById('password').value;
+    	if(EmailId=="" || EmailId !="admin@gmail.com" || password=="" || password != "admin" ){
+    		document.getElementById('err_name').style.color="red";
+    		document.getElementById('err_name').innerHTML="Please Enter Your Email Id"; 
+			document.getElementById('err_password').style.color="red";
+    		document.getElementById('err_password').innerHTML="Please Enter Your Password";
+    		return false;
+    	}else{
+    		return true;
+    	}
+    }
+    	
+    </script>
+    

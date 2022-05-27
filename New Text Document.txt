@@ -1,0 +1,12 @@
+create table YoddhaReg1(id number,first_name varchar2(100),last_name varchar2(100),age number,email varchar2(100),gender varchar2(100),phone number,password varchar2(100),subject varchar2(100));
+desc YoddhaReg1
+create table register1(name varchar2(100),id varchar2(100),password varchar2(100),DOB date,Address varchar2(100),phone number);
+select * from register1;
+create table mtable(ID number,Name varchar2(100),Brand varchar2(100),Quantity number,Total number);
+create table pics ( Pic_Id number,Image varchar2(100));
+insert into pics values(002,'images/gloves_wkf_approved.jpg');
+insert into pics values(003,'images/81SvzFIQuML._SL1500_.jpg');
+insert into pics values(004,'images/51D1pAXyN5L._SY355_.jpg');
+insert into mtable values(2,'KAI Approved gloves','Arawaza',4,25000);
+insert into mtable values(3,'Sports shin guard','Hannah',5,41500);
+insert into mtable values(4,'BackPack','Quechua',8,38970);
